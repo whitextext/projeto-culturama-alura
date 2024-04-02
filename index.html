@@ -12,6 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/img/Favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/flex.css">
+    <link rel="stylesheet" href="./assets/style/grid.css">
 </head>
 
 <body>
@@ -34,39 +36,40 @@
     </header>
 
     <main class="principal">
-
         <section class="banner">
-            <img src="./assets/img/banner1.png" alt="Banner cor amarela">
+            <img src="./assets/img/banner1.png" alt="Banner cor amarela" class="imagem_amarela">
             <img src="./assets/img/banner2.png" alt="Banner cor lilás">
             <img src="./assets/img/banner3.png" alt="Banner cor verde">
-            <img src="./assets/img/banner4.png" alt="Banner cor laranja">
+            <img src="./assets/img/banner4.png" alt="Banner cor laranja" class="imagem_laranja">
         </section>
-
         <section class="categorias">
-            <h2 class="categorias__titulo">Categorias</h2>
-            <ul class="categorias__lista">
-                <li class="categorias__item">Shows</li>
-                <li class="categorias__item">Teatro</li>
-                <li class="categorias__item">Festivais</li>
-                <li class="categorias__item">Cinema</li>
-                <li class="categorias__item">Arte</li>
-                <li class="categorias__item">Fotografia</li>
-                <li class="categorias__item">Tecnologia</li>
-                <li class="categorias__item">Design</li>
-            </ul>
-            <div class="categorias__destaques">
-                <div class="destaques">
-                    <h3 class="destaques__titulo">Destaques:</h3>
-                    <div class="destaques__barra"></div>
-                    <div>
-                        <img src="./assets/img/icone-seta-voltar.png">
-                        <img src="./assets/img/icone-seta-avancar.png">
+            <div destaque_categorias>
+                <h2 class="categorias__titulo">Categorias</h2>
+                <ul class="categorias__lista">
+                    <li class="categorias__item">Shows</li>
+                    <li class="categorias__item">Teatro</li>
+                    <li class="categorias__item">Festivais</li>
+                    <li class="categorias__item">Cinema</li>
+                    <li class="categorias__item">Arte</li>
+                    <li class="categorias__item">Fotografia</li>
+                    <li class="categorias__item">Tecnologia</li>
+                    <li class="categorias__item">Design</li>
+                </ul>
+            </div>
+            <div class="destaques_grupo">
+                <div class="categorias__destaques">
+                    <div class="destaques">
+                        <h3 class="destaques__titulo">Destaques:</h3>
+                        <div class="destaques__barra"></div>
+                        <div>
+                            <img src="./assets/img/icone-seta-voltar.png">
+                            <img src="./assets/img/icone-seta-avancar.png">
+                        </div>
                     </div>
                 </div>
+                <div class="categorias__imagem"></div>
             </div>
-            <div class="categorias__imagem"></div>
         </section>
-
         <section class="eventos">
             <h2 class="eventos__titulo">Próximos eventos</h2>
             <ul class="eventos__lista">

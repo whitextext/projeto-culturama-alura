@@ -1,0 +1,143 @@
+/* header */
+
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 9vw;
+}
+
+@media screen and (min-width: 1050px){
+    .menu{
+        flex-wrap: nowrap;
+    }
+    .menu__item{
+        order: 2;
+    }
+
+    .menu__item:first-child{
+        order: 0;
+    }
+
+    .menu__pesquisar{
+        order: 1;
+    }
+}
+
+/* categorias e destaques */
+
+.categorias{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categorias__lista{
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px 30px;
+    margin-top: 10px;
+}
+
+
+
+.destaques{
+    display: flex;
+    align-items: center;
+    gap: 30px 10px;
+}
+
+@media screen and (max-width: 1300px){
+    .categorias{
+        flex-flow: column nowrap;
+    }
+
+    .categorias__lista{
+        width: 90vw;
+    }
+
+    .categorias__imagem{
+        width: 80vw;
+        height: 35vw;
+    }
+
+    .destaques_grupo, .destaques_categorias{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .categorias__imagem{
+        height: 30vh;
+    }
+}
+
+
+/* eventos */
+
+
+.eventos__lista{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px 30px ;
+    justify-content: center;
+}
+
+.eventos__item{
+    flex-grow: 1;
+    max-width: 450px;
+}
+
+.eventos__botao{
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+}
+
+
+/* agenda */
+
+.agenda__lista{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px 30px;
+    justify-content: center;
+}
+
+
+.agenda__item{
+    flex-grow: 1;
+    max-width: 450px;
+}
+
+.agenda__botao{
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+}
+
+.agenda__atracao{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* rodape */
+
+.rodape{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo{
+    align-self: flex-end;
+    order: 2;
+}
+
+

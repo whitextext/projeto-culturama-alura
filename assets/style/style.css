@@ -198,6 +198,7 @@ img:hover {
     background-image: url("../img/destaques-360.png");
     background-repeat: no-repeat;
     height: 271px;
+    
     background-size: cover;
     background-position: center;
     opacity: 1;
